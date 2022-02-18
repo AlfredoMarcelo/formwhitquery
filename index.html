@@ -8,7 +8,7 @@
 
     <title>Document</title>
 </head>
-<body>
+<body class="bg-dark">
     <section class="bg-dark">
         <div class="container">
           <div class="row mt-5 py-5 justify-content-center text-light">
@@ -18,28 +18,108 @@
               </p>
             </div>
             <div class="col-6 mt-5">
-              <form>
+              <form id="formulario">
                 <div class="mb-3">
                   <input
                     type="text"
-                    name="email"
+                    name="nombre"
                     class="form-control my-2"
-                    placeholder="Email"
+                    placeholder="Nombre"
+                    id="nombre"
                   />
+                  <div id="alertaInfo" role="alert">
+                  </div>
                 </div>
                 <div class="mb-3">
                   <input
-                    type="password"
-                    name="password"
+                    type="text"
+                    name="apellidoUno"
                     class="form-control my-2"
-                    placeholder="Password"
+                    placeholder="Primer Apellido"
+                    id="apellidoUno"
                   />
+                  <div id="alertaInfo" role="alert">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    name="apellidoDos"
+                    class="form-control my-2"
+                    placeholder="Segundo Apellido"
+                    id="apellidoDos"
+                  />
+                  <div id="alertaInfo" role="alert">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="number"
+                    name="edad"
+                    class="form-control my-2"
+                    placeholder="Edad"
+                    id="edad"
+                  />
+                  <div id="alertaInfo" role="alert">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    name="domicilio"
+                    class="form-control my-2"
+                    placeholder="Domicilio"
+                    id="domicilio"
+                  />
+                  <div id="alertaInfo" role="alert">
+                  </div>
+                </div>
+                <!-- <div class="mb-3">
+                    <label class="form-check-label">Es alergico: </label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Si
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          No
+                        </label>
+                      </div>
+                  <div id="alertaInfo" role="alert">
+                  </div>
+                </div> -->
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    name="medicamentos"
+                    class="form-control my-2"
+                    placeholder="Medicamentos contraindicados"
+                    id="medicamentos"
+                  />
+                  <div id="alertaInfo" role="alert">
+                  </div>
+                <div class="mb-3">
+                    <p>Please select your favorite Web language:</p>
+                      <input type="radio" id="html" name="fav_language" value="HTML">
+                      <label for="html">HTML</label><br>
+                      <input type="radio" id="css" name="fav_language" value="CSS">
+                      <label for="css">CSS</label><br>
+                      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                      <label for="javascript">JavaScript</label>
+                  <div id="alertaRadio" role="alert">
+                  </div>
+
+
+
                 </div>
                 <div class="d-grid gap-2">
                   <button class="btn btn-warning mt-3 mb-3 py-2 rounded-pill">
                     <p class="h3">
                     <i class="bi bi-door-open"></i>
-                      Login
+                      Submit
                     </p>
                   </button>
                 </div>
@@ -51,7 +131,8 @@
         <div class="row py-5"></div>
         <div class="row py-5"></div>
       </section>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
